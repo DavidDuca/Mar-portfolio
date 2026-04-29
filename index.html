@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marissa — Information Systems student, web developer, data analyst, and dancer based in the Philippines." />
+  <meta name="theme-color" content="#b86a8a" />
+  <title>Marissa — Portfolio</title>
+
+  <!-- Fonts: Fraunces (editorial serif) + Inter (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 (real icons everywhere — no emoji icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Devicons (real coloured tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     LOADER
+============================================================ -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-mark">M</div>
+  <div class="ld-bar"><span></span></div>
+</div>
+
+
+<!-- ============================================================
+     NAV — slim editorial bar with section numbering
+============================================================ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <span class="logo-mark">M</span>
+      <span class="logo-name">Marissa</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home"><i class="fa-regular fa-circle"></i> Home</a>
+      <a href="#about"><i class="fa-regular fa-circle"></i> About</a>
+      <a href="#skills"><i class="fa-regular fa-circle"></i> Skills</a>
+      <a href="#hobbies"><i class="fa-regular fa-circle"></i> Hobbies</a>
+      <a href="#projects"><i class="fa-regular fa-circle"></i> Work</a>
+      <a href="#certifications"><i class="fa-regular fa-circle"></i> Certs</a>
+      <a href="#contact"><i class="fa-regular fa-circle"></i> Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon icon-dark"></i>
+        <i class="fa-solid fa-sun icon-light"></i>
+      </button>
+      <a href="#contact" class="btn-cta">
+        <i class="fa-regular fa-paper-plane"></i> Hire me
+      </a>
+      <button class="hbg" id="hbg" aria-label="Toggle navigation menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mob-nav" id="mob-nav" aria-hidden="true">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#projects">Work</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- ============================================================
+     HERO — editorial split layout, no floating badges
+============================================================ -->
+<section id="home">
+  <div class="ctr hero">
+    <div class="hero-meta">
+      <span class="meta-num">N°01</span>
+      <span class="meta-line"></span>
+      <span class="meta-label">Portfolio · 2026 Edition</span>
+    </div>
+
+    <div class="hero-grid">
+
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="kicker">Hello, I'm</span>
+          Mar<span class="serif-i">i</span>ssa
+        </h1>
+
+        <div class="hero-role">
+          <span class="role-prefix">Currently a</span>
+          <span id="type-el"></span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-bio">
+          A Bachelor of Science in informations Systems student blending the discipline
+          of technology with the expressiveness of dance. I build clean web
+          experiences, analyse data with care, and approach every project the way
+          I approach choreography — with focus, structure and a little soul.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <span>View my work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Say hello</span>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span class="soc-lbl">Find me on</span>
+          <a href="https://linkedin.com/in/marissa" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/marissa" target="_blank" rel="noopener" class="soc-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/marissa" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://facebook.com/marissa" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-portrait">
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <img src="assets/mar.png" alt="upload your portrait here" class="portrait-img" />
+            </div>
+          </div>
+          <figcaption class="portrait-caption">
+            <span class="cap-name">Marissa</span>
+            <span class="cap-loc"><i class="fa-solid fa-location-dot"></i> Negros Occidental · PH</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Bottom marquee strip — replaces stats bar -->
+    <div class="hero-strip">
+      <div class="strip-item"><i class="fa-solid fa-graduation-cap"></i> BS Information Systems</div>
+      <div class="strip-item"><i class="fa-solid fa-code"></i> Frontend Development</div>
+      <div class="strip-item"><i class="fa-solid fa-chart-column"></i> Data Analysis</div>
+      <div class="strip-item"><i class="fa-solid fa-music"></i> Performing Dancer</div>
+      <div class="strip-item"><i class="fa-solid fa-utensils"></i> Home Cook</div>
+      <div class="strip-item"><i class="fa-solid fa-certificate"></i> 6+ Certifications</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°02</span>
+        <span class="sec-eyebrow">About</span>
+      </div>
+      <h2 class="sec-title">A short story <em>about me.</em></h2>
+      <p class="sec-sub">
+        Information Systems student at CHMSU, balancing academics, technology and
+        artistry. Curious, organised, and a little obsessed with making things
+        feel as good as they look.
+      </p>
+    </header>
+
+    <div class="about-grid">
+
+      <div class="about-col">
+        <div class="col-title">
+          <span class="col-num">01</span>
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        </div>
+        <div class="timeline">
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>BS in Information Systems</h4>
+              <span class="tl-date">2025 — Present</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-building-columns"></i>
+              Carlos Hilado Memorial State University
+            </div>
+            <p>Systems analysis, database management, enterprise computing, web
+              development and data analytics, with active participation in
+              project-based learning.</p>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>Senior High School — STEM Strand</h4>
+              <span class="tl-date">2023 — 2025</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-school"></i>
+              E. B. Magalona National High School
+            </div>
+            <p>Science, Technology, Engineering, and Mathematics.</p>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>Junior High School</h4>
+              <span class="tl-date">2019 — 2023</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-school"></i>
+              St. Francis of Assisi School of Silay, Inc.
+            </div>
+            <p>Built core academic foundations alongside a growing love for
+              technology and the performing arts.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="about-col">
+        <div class="col-title">
+          <span class="col-num">02</span>
+          <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        </div>
+        <div class="timeline">
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>Data Analyst</h4>
+              <span class="tl-date">Present</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-seedling"></i>
+              <a href="https://seedlynx.com" target="_blank" rel="noopener">SeedLynx</a>
+            </div>
+            <p>Cleaning and interpreting datasets to produce actionable insights,
+              building visual dashboards and supporting strategic planning.</p>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>Shein Booker / Shein Discounted Account Seller</h4>
+              <span class="tl-date">2021 — Present</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-bag-shopping"></i>
+              Shein Philippines
+            </div>
+            <p>Abusing Shein app's vulnerabilities to create discounted accounts and resell products.</p>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-marker"></div>
+            <div class="tl-head">
+              <h4>Customer Service Representative</h4>
+              <span class="tl-date">Jan 2026 - March 2026</span>
+            </div>
+            <div class="tl-org">
+              <i class="fa-solid fa-headset"></i>
+              iQor Philippines
+            </div>
+            <p>Handled inbound inquiries with empathy and efficiency. Strengthened
+              communication, listening and structured problem-solving.</p>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-cards">
+      <article class="about-card">
+        <div class="ac-num">01</div>
+        <h4><i class="fa-regular fa-lightbulb"></i> My approach</h4>
+        <p>Creativity and logic go hand in hand. Whether I'm choreographing a routine or
+          debugging code, I bring the same focus and care for detail.</p>
+      </article>
+      <article class="about-card">
+        <div class="ac-num">02</div>
+        <h4><i class="fa-solid fa-arrow-trend-up"></i> Current focus</h4>
+        <p>Deepening data analytics, shipping web apps, exploring ML fundamentals
+          and sharpening data-visualisation craft.</p>
+      </article>
+      <article class="about-card">
+        <div class="ac-num">03</div>
+        <h4><i class="fa-regular fa-heart"></i> What drives me</h4>
+        <p>The intersection of art and technology. Building things that work
+          beautifully and <em>feel</em> beautiful too.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SKILLS
+============================================================ -->
+<section id="skills">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°03</span>
+        <span class="sec-eyebrow">Skills</span>
+      </div>
+      <h2 class="sec-title">Tools &amp; <em>craft.</em></h2>
+      <p class="sec-sub">
+        A practical mix of frontend, programming, data, networking, soft skills
+        and culinary work — each one earned through real practice.
+      </p>
+    </header>
+
+    <div class="sk-grid">
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h3>Web Development</h3>
+            <span>Frontend craft</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="devicon-html5-plain colored"></i> HTML5</span>
+          <span class="sk-tag"><i class="devicon-css3-plain colored"></i> CSS3</span>
+          <span class="sk-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="sk-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+          <span class="sk-tag"><i class="fa-solid fa-pen-ruler"></i> UI/UX Basics</span>
+          <span class="sk-tag"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+        </div>
+      </article>
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-terminal"></i></div>
+          <div>
+            <h3>Programming</h3>
+            <span>Languages &amp; logic</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="devicon-java-plain colored"></i> Java</span>
+          <span class="sk-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="sk-tag"><i class="fa-solid fa-sitemap"></i> OOP Concepts</span>
+          <span class="sk-tag"><i class="fa-solid fa-code-branch"></i> Version Control</span>
+          <span class="sk-tag"><i class="fa-solid fa-bug"></i> Debugging</span>
+        </div>
+      </article>
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-chart-pie"></i></div>
+          <div>
+            <h3>Data &amp; Design</h3>
+            <span>Analytics &amp; creativity</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="fa-solid fa-table-cells-large"></i> MS Excel</span>
+          <span class="sk-tag"><i class="fa-solid fa-file-word"></i> MS Word</span>
+          <span class="sk-tag"><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
+          <span class="sk-tag"><i class="fa-solid fa-paintbrush"></i> Canva</span>
+          <span class="sk-tag"><i class="fa-solid fa-chart-column"></i> Data Visualisation</span>
+          <span class="sk-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</span>
+          <span class="sk-tag"><i class="fa-regular fa-images"></i> Graphic Design</span>
+        </div>
+      </article>
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-network-wired"></i></div>
+          <div>
+            <h3>Networking &amp; IT</h3>
+            <span>Infrastructure basics</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="fa-solid fa-sitemap"></i> TCP/IP</span>
+          <span class="sk-tag"><i class="fa-solid fa-layer-group"></i> OSI Model</span>
+          <span class="sk-tag"><i class="fa-solid fa-server"></i> DHCP &amp; DNS</span>
+          <span class="sk-tag"><i class="fa-solid fa-network-wired"></i> VLANs</span>
+          <span class="sk-tag"><i class="fa-solid fa-shield-halved"></i> Network Security</span>
+          <span class="sk-tag"><i class="devicon-cisco-plain colored"></i> Cisco IOS</span>
+          <span class="sk-tag"><i class="fa-solid fa-diagram-project"></i> Packet Tracer</span>
+        </div>
+      </article>
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-utensils"></i></div>
+          <div>
+            <h3>Cooking</h3>
+            <span>Home kitchen craft</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="fa-solid fa-fire-burner"></i> Filipino Classics</span>
+          <span class="sk-tag"><i class="fa-solid fa-bowl-rice"></i> Asian Cuisine</span>
+          <span class="sk-tag"><i class="fa-solid fa-bread-slice"></i> Baking Basics</span>
+          <span class="sk-tag"><i class="fa-solid fa-mug-hot"></i> Coffee &amp; Drinks</span>
+          <span class="sk-tag"><i class="fa-solid fa-leaf"></i> Meal Prep</span>
+          <span class="sk-tag"><i class="fa-solid fa-cake-candles"></i> Desserts</span>
+        </div>
+      </article>
+
+      <article class="sk-card">
+        <header class="sk-head">
+          <div class="sk-ico"><i class="fa-solid fa-users-gear"></i></div>
+          <div>
+            <h3>Soft Skills</h3>
+            <span>Professional growth</span>
+          </div>
+        </header>
+        <div class="sk-tags">
+          <span class="sk-tag"><i class="fa-solid fa-comments"></i> Communication</span>
+          <span class="sk-tag"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+          <span class="sk-tag"><i class="fa-solid fa-brain"></i> Critical Thinking</span>
+          <span class="sk-tag"><i class="fa-regular fa-clock"></i> Time Management</span>
+          <span class="sk-tag"><i class="fa-solid fa-handshake"></i> Collaboration</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HOBBIES — featured passion uses an autoplaying video
+============================================================ -->
+<section id="hobbies">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°04</span>
+        <span class="sec-eyebrow">Hobbies</span>
+      </div>
+      <h2 class="sec-title">Beyond the <em>screen.</em></h2>
+      <p class="sec-sub">
+        Life isn't only code and spreadsheets. These are the things that fill my
+        days outside of class and work.
+      </p>
+    </header>
+
+    <article class="hobby-featured">
+      <div class="hf-visual">
+        <!-- Autoplaying placeholder dance video. Replace src with your own clip. -->
+        <video
+          class="hf-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=900&q=70"
+          aria-label="Marissa dancing — autoplaying video">
+          <source src="assets/dance.mp4" type="video/mp4" />
+        </video>
+        <div class="hf-video-tag">
+        </div>
+      </div>
+
+      <div class="hf-body">
+        <div class="hf-eyebrow">
+          <span class="meta-num">N°04 · 01</span>
+          <span class="sec-eyebrow">Featured Passion</span>
+        </div>
+        <h3 class="hf-title">Dancing is <em>my language.</em></h3>
+        <p class="hf-desc">
+          Dance is where my soul speaks loudest. From contemporary flows to
+          high-energy hip-hop, I've been moving to rhythm for as long as I can
+          remember. It's storytelling, expression, and the place where
+          discipline and joy meet.
+        </p>
+        <div class="hf-styles">
+          <span class="hf-style"><i class="fa-solid fa-music"></i> Contemporary</span>
+          <span class="hf-style"><i class="fa-solid fa-music"></i> Hip-Hop</span>
+          <span class="hf-style"><i class="fa-solid fa-music"></i> Modern</span>
+          <span class="hf-style"><i class="fa-solid fa-music"></i> Jazz</span>
+          <span class="hf-style"><i class="fa-solid fa-music"></i> Street</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="hobby-grid">
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-paintbrush"></i></div>
+        <h4>Creative Design</h4>
+        <p>Bringing visual ideas to life — social graphics, mood boards, and
+          aesthetic layouts where artistic and technical sides meet.</p>
+      </article>
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-utensils"></i></div>
+        <h4>Cooking &amp; Baking</h4>
+        <p>From Filipino classics to weekend baking experiments — the kitchen is
+          where I unwind, play, and feed the people I love.</p>
+      </article>
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-book-open"></i></div>
+        <h4>Reading &amp; Learning</h4>
+        <p>Self-help, tech and fiction in equal measure. Continuous learning is
+          the best long-term investment.</p>
+      </article>
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-headphones"></i></div>
+        <h4>Music</h4>
+        <p>From lo-fi while coding to upbeat tracks for dance practice — music
+          is the soundtrack to almost everything I do.</p>
+      </article>
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-plane"></i></div>
+        <h4>Exploring</h4>
+        <p>New places, cuisines and cultures keep my perspective fresh and my
+          creativity flowing.</p>
+      </article>
+
+      <article class="hobby-card">
+        <div class="hc-ico"><i class="fa-solid fa-seedling"></i></div>
+        <h4>Personal Growth</h4>
+        <p>Journaling, goal-setting and small daily practices. A little better
+          every day, in craft and character.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROJECTS
+============================================================ -->
+<section id="projects">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°05</span>
+        <span class="sec-eyebrow">Selected Work</span>
+      </div>
+      <h2 class="sec-title">Projects in <em>progress.</em></h2>
+      <p class="sec-sub">
+        Real builds are on the way. The case studies below will be updated as
+        each project ships.
+      </p>
+    </header>
+
+    <div class="proj-grid">
+      <article class="proj-card">
+        <div class="proj-tag"><i class="fa-regular fa-clock"></i> In progress</div>
+        <div class="proj-ico"><i class="fa-solid fa-globe"></i></div>
+        <h4>Web Application</h4>
+        <p>A focused web build currently in development — clean UI, real users.</p>
+        <div class="proj-foot"><span>Frontend · UI</span><i class="fa-solid fa-arrow-right"></i></div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-tag"><i class="fa-regular fa-clock"></i> In progress</div>
+        <div class="proj-ico"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Data Dashboard</h4>
+        <p>Analytics project with thoughtful visualisations and a tidy data
+          pipeline.</p>
+        <div class="proj-foot"><span>Data · Visualisation</span><i class="fa-solid fa-arrow-right"></i></div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-tag"><i class="fa-regular fa-clock"></i> In progress</div>
+        <div class="proj-ico"><i class="fa-solid fa-pen-nib"></i></div>
+        <h4>Creative Project</h4>
+        <p>A small editorial side-project mixing design, copy and motion.</p>
+        <div class="proj-foot"><span>Design · Brand</span><i class="fa-solid fa-arrow-right"></i></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CERTIFICATIONS
+============================================================ -->
+<section id="certifications">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°06</span>
+        <span class="sec-eyebrow">Credentials</span>
+      </div>
+      <h2 class="sec-title">Earned <em>certifications.</em></h2>
+      <p class="sec-sub">
+        Recognised certifications across networking, cybersecurity and technical
+        computing — each representing real hours of focused work.
+      </p>
+    </header>
+
+    <div class="cert-grid">
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-network-wired"></i></div>
+          <div>
+            <h4>Introduction to Networks (ITN)</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>Foundational networking — architecture, protocols, IP addressing,
+          Ethernet and wireless LAN basics.</p>
+        <div class="cert-skills">
+          <span>TCP/IP</span><span>OSI</span><span>IP Addressing</span>
+          <span>Ethernet</span><span>Network Media</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Introduction to Networks','Cisco Networking Academy','#','Cisco ITN')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-ITN.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <div>
+            <h4>Switching, Routing &amp; Wireless</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>Switching concepts, VLANs, inter-VLAN routing, STP, DHCP and wireless
+          LAN essentials.</p>
+        <div class="cert-skills">
+          <span>VLANs</span><span>STP</span><span>Routing</span><span>DHCP</span><span>WLAN</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Switching, Routing & Wireless Essentials','Cisco Networking Academy','#','Cisco SRWE')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-SRWE.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-building-shield"></i></div>
+          <div>
+            <h4>Enterprise Networking, Security &amp; Automation</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>OSPF routing, network security, ACLs, NAT, and basic network
+          automation with Python and REST APIs.</p>
+        <div class="cert-skills">
+          <span>OSPF</span><span>ACLs</span><span>NAT</span><span>Security</span><span>Automation</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Enterprise Networking, Security & Automation','Cisco Networking Academy','#','Cisco ENSA')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-ENSA.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h4>Cybersecurity Essentials</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>Threat analysis, vulnerability assessment, cryptography basics,
+          firewalls, IDS/IPS and security best practices.</p>
+        <div class="cert-skills">
+          <span>Cybersecurity</span><span>Cryptography</span><span>Firewalls</span>
+          <span>Threats</span><span>IDS/IPS</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Cybersecurity Essentials','Cisco Networking Academy','#','Cisco Cybersecurity')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-Cybersecurity.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-lock"></i></div>
+          <div>
+            <h4>Network Defense</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>Access control, firewall technologies, cloud and endpoint security.
+          Hands-on policy configuration.</p>
+        <div class="cert-skills">
+          <span>Access Control</span><span>Firewall</span><span>Cloud Sec</span>
+          <span>Endpoint</span><span>VPN</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Network Defense','Cisco Networking Academy','#','Cisco Network Defense')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-Network-Defense.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-top">
+          <div class="cert-ico"><i class="fa-solid fa-bug-slash"></i></div>
+          <div>
+            <h4>Cyber Threat Management</h4>
+            <div class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</div>
+          </div>
+        </div>
+        <p>Cyber threat landscapes, incident response, risk management and SOC
+          workflows for proactive monitoring.</p>
+        <div class="cert-skills">
+          <span>Threat Intel</span><span>Incident Response</span><span>Risk</span><span>SOC</span>
+        </div>
+        <div class="cert-btns">
+          <button class="btn-view-cert"
+            onclick="openCertModal('Cyber Threat Management','Cisco Networking Academy','#','Cisco CTM')">
+            <i class="fa-regular fa-eye"></i> View PDF
+          </button>
+          <a class="btn-dl-cert" href="#" download="Cisco-CTM.pdf">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact">
+  <div class="ctr">
+    <header class="sec-head">
+      <div class="sec-meta">
+        <span class="meta-num">N°07</span>
+        <span class="sec-eyebrow">Contact</span>
+      </div>
+      <h2 class="sec-title">Let's <em>work together.</em></h2>
+      <p class="sec-sub">
+        Have a project in mind, a collaboration idea, or just want to say hello?
+        My inbox is always open.
+      </p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="ci-txt">
+            <strong>Email</strong>
+            <span>marissabuatista548@email.com</span>
+          </div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="ci-txt">
+            <strong>Location</strong>
+            <span>Negros Occidental, Philippines</span>
+          </div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="ci-txt">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/marissa</span>
+          </div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="ci-txt">
+            <strong>Instagram</strong>
+            <span>@iissaayyyyy</span>
+          </div>
+        </div>
+        <div class="ci-row">
+          <div class="ci-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="ci-txt">
+            <strong>Availability</strong>
+            <span>Open for freelance &amp; collaborations</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="soc-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <form class="cf-box" id="contact-form" novalidate>
+        <h3>Send a message</h3>
+
+        <div class="fg-row">
+          <div class="fg">
+            <label class="fl" for="cf-name">Name <span class="req">*</span></label>
+            <input type="text" class="fi" id="cf-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="fg">
+            <label class="fl" for="cf-email">Email <span class="req">*</span></label>
+            <input type="email" class="fi" id="cf-email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="fg">
+          <label class="fl" for="cf-subject">Subject</label>
+          <input type="text" class="fi" id="cf-subject" name="subject" placeholder="What's this about?" />
+        </div>
+
+        <div class="fg">
+          <label class="fl" for="cf-message">Message <span class="req">*</span></label>
+          <textarea class="fta" id="cf-message" name="message" placeholder="Tell me more…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send" id="send-btn">
+          <i class="fa-regular fa-paper-plane"></i> Send Message
+        </button>
+
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="ctr">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">M</span>
+          <span class="logo-name">Marissa</span>
+        </a>
+        <p>Information Systems student · Web Developer · Data Analyst · Dancer.<br>
+          CHMSU, Philippines.</p>
+      </div>
+
+      <div class="ft-links">
+        <div>
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://github.com" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <span>© <span id="yr"></span> Marissa. All rights reserved.</span>
+      <span class="ft-meta">Designed &amp; built with care.</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     PDF MODAL
+============================================================ -->
+<div class="modal-bg" id="pdf-modal" role="dialog" aria-modal="true" aria-label="Certificate Preview">
+  <div class="pdf-modal">
+    <div class="pdf-modal-head">
+      <div>
+        <div class="pdf-modal-title" id="pdf-cert-title">Certificate Title</div>
+        <div class="pdf-modal-sub" id="pdf-cert-sub">Issuing Organisation</div>
+      </div>
+      <button class="modal-close-btn" onclick="closeCertModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="pdf-frame-wrap" id="pdf-frame-wrap">
+      <div class="pdf-placeholder">
+        <i class="fa-regular fa-file-pdf"></i>
+        <p>Upload your certificate PDF and update the file path in <code>index.html</code>.</p>
+      </div>
+    </div>
+
+    <div class="pdf-modal-foot">
+      <span class="pdf-cert-name" id="pdf-modal-cert-name"></span>
+      <div class="modal-actions">
+        <button class="btn-view-cert" onclick="closeCertModal()">
+          <i class="fa-solid fa-xmark"></i> Close
+        </button>
+        <a class="btn-dl-cert" id="pdf-dl-btn" href="#" download>
+          <i class="fa-solid fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

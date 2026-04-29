@@ -1,0 +1,23 @@
+{
+  "name": "mar-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marissa's portfolio website — static site with a Vercel serverless contact endpoint.",
+  "author": "Marissa",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "build": "echo \"Static site — no build step required.\"",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  }
+}
