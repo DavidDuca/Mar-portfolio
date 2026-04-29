@@ -1,3 +1,6 @@
+
+
+
 /* ================================================================
    MARISSA PORTFOLIO — main.js
    Loader · Theme toggle · Typing · Nav · Reveal · Modal · Form
@@ -173,14 +176,30 @@ contactForm?.addEventListener('submit', async (e) => {
   sendBtn.disabled = true;
   sendBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
 
-  // Demo-only — wire to your backend / form service of choice.
-  setTimeout(() => {
-    showStatus('Thanks! Your message was sent. I\'ll get back to you soon.', 'success');
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, subject, message }),
+    });
+
+    const data = await res.json().catch(() => ({}));
+
+    if (!res.ok) {
+      throw new Error(data.error || `Request failed (${res.status})`);
+    }
+
+    showStatus(data.message || 'Thanks! Your message was sent.', 'success');
     contactForm.reset();
+  } catch (err) {
+    console.error('[contact] Send error:', err);
+    showStatus(err.message || 'Failed to send. Please try again.', 'error');
+  } finally {
     sendBtn.disabled = false;
     sendBtn.innerHTML = '<i class="fa-regular fa-paper-plane"></i> Send Message';
-  }, 900);
+  }
 });
+
 
 function showStatus(msg, type) {
   if (!statusEl) return;
