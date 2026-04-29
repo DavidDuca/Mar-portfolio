@@ -15,6 +15,7 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "nodemailer": "^6.9.14"
   },
   "devDependencies": {
